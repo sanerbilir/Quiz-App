@@ -1,0 +1,56 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Center align the content */
+}
+
+.question-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.greeting {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0; /* This adds margin to all buttons */
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 4px;
+  background-color: white;
+  color: #007bff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+button.correct {
+  background-color: #007bff;
+  color: white;
+}
+
+button.incorrect {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+/* Specific class for the Start Quiz button to make it smaller and centered */
+.start-quiz-btn {
+  width: auto;
+  padding: 10px 20px;
+  margin: 20px auto; /* Center horizontally */
+}

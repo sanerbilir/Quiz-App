@@ -1,0 +1,113 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #007BFF;
+  background-size: cover;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 360px; /* Control the form width */
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%; /* Full width minus padding */
+  padding: 10px;
+  margin-bottom: 10px; /* Uniform margin for separation */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Custom button styles */
+.login-button, .register-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Ensure margin is applied */
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 0; /* Remove border radius */
+}
+
+.login-button {
+  background-color: #007bff;
+}
+
+.register-button {
+  background-color: #007bff;
+}
+
+.login-button:hover, .register-button:hover {
+  background-color: #0056b3;
+}
+
+button:focus, input:focus {
+  outline: none;
+  border-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+/* Social login button styles */
+.social-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Standard height for all social buttons */
+  padding: 0 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 0; /* Remove border radius */
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none; /* Remove underline */
+}
+
+.social-login.google {
+  background-color: #de5246; /* Google red */
+}
+
+.social-login.facebook {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-login img {
+  vertical-align: middle;
+  height: 20px; /* Adjust based on your design needs */
+  margin-right: 8px;
+}
+
+/* Hover effects for all buttons for better interaction feedback */
+button:hover, .social-login:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+button:active, .social-login:active {
+  text-decoration: none; /* Ensure no underline on click */
+}
+
+.social-login:hover, .social-login:active {
+  color: white; /* Ensure text color stays white on hover and click */
+}
